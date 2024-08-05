@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaMobileAlt } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const FooterLinks = [
   {
@@ -82,6 +84,35 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+            {/* Company Address */}
+            <div className="py-8 px-4 col-span-2 sm:col-auto">
+              <h1 className="text-xl font-bold sm:text-left mb-3">
+                Address links
+              </h1>
+              <div>
+                <div className="flex items-center gap-3">
+                  <FaLocationArrow />
+                  <p>XXXX, XXXXX</p>
+                  <p>XxXxXxX</p>
+                </div>
+                <div className="flex items-center gap-3 mt-6">
+                  <FaMobileAlt />
+                  <p>+XX XXX XXX XXXX</p>
+                </div>
+                {/* Social Links */}
+                <div className="flex items-center gap-3 mt-6">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <FaInstagram className="text-3xl hover:text-primary duration-200" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <FaFacebook className="text-3xl hover:text-primary duration-200" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <FaLinkedin className="text-3xl hover:text-primary duration-200" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
