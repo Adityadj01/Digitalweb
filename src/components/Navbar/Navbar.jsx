@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import PropTypes from "prop-types";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import { IoMdSearch } from "react-icons/io";
 import DarkMode from "./DarkMode";
@@ -45,7 +46,7 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({handleOrderPopup}) => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       <div className="py-4">
@@ -118,7 +119,7 @@ const Navbar = () => {
             </div>
 
             {/* Order-Button section */}
-            <button className="relative p-3">
+            <button className="relative p-3" onClick={handleOrderPopup}>
               <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">
                 3
@@ -137,3 +138,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+Navbar.propTypes = {
+  handleOrderPopup: PropTypes.func.isRequired,
+}

@@ -39,7 +39,7 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
               id vero ab recusandae totam.
             </p>
-            <p className="text-gray-500 mt-4">Made With 💖 by MuchaFuuker</p>
+            <p className="text-gray-500 mt-4">Made With 💖 by laudu Siddu</p>
             <a
               href="https://github.com/Adityadj01"
               target="blank"

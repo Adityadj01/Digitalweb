@@ -28,7 +28,7 @@ const Category2 = () => {
             <img
               src={Image1}
               alt="image"
-              className="w-[250px] absolute top-1/2 -translate-y-1/2 right-10 hover:scale-[135%] duration-500"
+              className="w-[250px] absolute top-1/2 -translate-y-1/2 right-3 hover:scale-[110%] duration-500"
             />
           </div>
           {/* second colomn  */}

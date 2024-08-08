@@ -5,6 +5,7 @@ import Image1 from "../../assets/hero/headphone.png";
 import Image2 from "../../assets/category/vr.png";
 import Image3 from "../../assets/category/macbook.png";
 import Button from "../Shared/Button";
+import PropTypes from "prop-types";
 
 const HeroData = [
   {
@@ -30,7 +31,7 @@ const HeroData = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
   const settings = {
     dots: false,
     arrows: false,
@@ -70,6 +71,7 @@ const Hero = () => {
                         text="Shop By Category"
                         bgColor="bg-primary"
                         textColor="text-white"
+                        handleOrderPopup={handleOrderPopup}
                       />
                     </div>
                   </div>
@@ -95,3 +97,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+Hero.propTypes = {
+  handleOrderPopup: PropTypes.func.isRequired,
+};

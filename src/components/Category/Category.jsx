@@ -68,7 +68,7 @@ const Category = () => {
                 </div>
               </div>
               <img src={Image3} alt="image" 
-              className='w-[250px] absolute top-1/2 -translate-y-1/2 right-10 hover:scale-[135%] duration-500'
+              className='w-[250px] absolute top-1/2 -translate-y-1/2 right-0 hover:scale-[125%] duration-500'
               />
             </div>
         </div>
