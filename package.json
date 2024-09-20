@@ -1,5 +1,5 @@
 {
-  "name": "bbc",
+  "name": "eshop",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,10 +11,15 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "bbc": "file:",
+    "E-Shop": "file:",
+    "eshop": "file:",
+    "EShop": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-slick": "^0.29.0",
+    "S": "file:",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
